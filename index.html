@@ -11,27 +11,141 @@
     <script src="main.js" charset="utf-8"></script>
   </head>
   <body>
-    <ul class="tabs">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a href="#resources">Resources</a></li>
-      <li><a href="#notes">Notes</a></li>
-    </ul>
+    <nav>
+      <div id="navInner">
+        <div id="logosCont">
+          <a href="https://girlswhocode.com/" target="_blank" class="navLink" title="https://girlswhocode.com/">
+            <img src="./images/GWC-logo-gray.png" alt="GWC Logo" class="headerLogos">
+          </a>
+          <a href="https://www.jaxpubliclibrary.org/jax-makerspace" target="_blank" class="navLink" title="https://www.jaxpubliclibrary.org/jax-makerspace">
+            <img src="./images/jpl_logo.png" alt="Jax Public Library Logo" class="headerLogos">
+          </a>
+        </div>
+        <ul class="tabs">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#resources">Resources</a></li>
+          <li><a href="#notes">Notes</a></li>
+          <hr />
+        </ul>
+      </div>
+    </nav>
     <section id="home" class="tab_content">
-      <h2>Home</h2>
+      <div class="headerContainer">
+        <div class="imageContainer"><img src="./images/kevin-bhagat-343433-cropped.jpg" alt="work hard anywhere image" title="Photo by Kevin Bhagat on Unsplash"></div>
+      </div>
+      <article id="homeArticle" class="tab_article">
+        <div id="homeLeft" class="seventy">
+          <h1>Want to work at a tech company?</h1>
+          <div class="topSpace">Calling fifth grade through twelfth grade girls!</div>
+          <div class="topSpace">Girls Who Code is a national organization that offers after<br>school clubs to girls interested in computer programming.<br>Join us to explore coding in a fun and friendly environment!</div>
+        </div>
+        <div id="homeRight" class="twentyFive">
+          <h1>Location:</h1>
+          <div class="topSpace">Main Library, Jax Makerspace</div>
+          <div class="topSpace">303 North Laura Street</div>
+          <div class="topSpace">Jacksonville, FL 32202</div>
+          <div class="topSpace">Saturdays, 10:30 AM - 12:00 PM</div>
+        </div>
+        <div>
+          <img src="" alt="">
+        </div>
+      </article>
     </section>
     <section id="about" class="tab_content">
-      <h2>About</h2>
+      <div class="headerContainer">
+        <div class="imageContainer"><img src="./images/john-schnobrich-520023-cropped.jpg" alt="girls pointing at computer screen" title="Photo by John Schnobrich on Unsplash"></div>
+        <div class="blurbContainer">
+          <div class="blurbFlex">
+            <h1 class="aboutHeadStyle">Our Mission:</h1>
+            <div class="aboutHeadStyle" style="text-align:center;font-weight:bold;">Girls Who Code was founded with a single mission:<br>to close the gender gap in technology</div>
+          </div>
+        </div>
+      </div>
+      <article id="aboutArticle">
+        <div id="gwcContent" class="pageContent">
+          <h1 class="centerText">Girls Who Code</h1>
+          <div class="topSpace centerText">
+            <a href="https://girlswhocode.com/" target="_blank">girlswhocode.com</a>
+          </div>
+          <div class="topSpace">Girls Who Code is a national non-profit working to close the gender gap in technology. Our Clubs are FREE after-school programs for 3rd-5th and 6th-12th grade girls to join our sisterhood of supportive peers and role models and use computer science to change the world.</div>
+          <img src="./images/thought-catalog-655495-unsplash.jpg" alt="girl at whiteboard" title="Photo by Thought Catalog on Unsplash" class="fitWidth" style="margin-top: 115px;">
+        </div>
+        <div id="mkrContent" class="pageContent">
+          <img src="./images/GWC-Clubs-3480.jpg" alt="girls at computer" class="fitWidth">
+          <h1 class="topSpace centerText">Jax Makerspace</h1>
+          <div class="topSpace centerText">
+            <a href="https://www.jaxpubliclibrary.org/jax-makerspace" target="_blank">www.jaxpubliclibrary.org/jax-makerspace</a>
+          </div>
+          <div class="topSpace">The Jacksonville Public Library Makerspace is a place for making things, from movies to music, art to apps, robots to radios, novels to needlepoint.  Whether you are a novice or an expert, a student, hobbyist, inventor, entrepreneur, or artist, it’s a place for anyone interested in hands-on opportunities to explore, collaborate and create.</div>
+        </div>
+      </article>
     </section>
     <section id="contact" class="tab_content">
-      <h2>Contact</h2>
+      <div class="spacer"></div>
+      <h1 class="centerText">Contact</h1>
+      <form action="submit" id="contactForm"></form>
     </section>
     <section id="resources" class="tab_content">
-      <h2>Resources</h2>
+      <div class="headerContainer">
+        <div class="imageContainer"><img src="./images/tran-mau-tri-tam-57714-cropped.jpg" alt="woman working at desk" title="Photo by Tran Mau Tri Tam on Unsplash"></div>
+        <!-- <div class="blurbContainer">
+          <div class="blurbFlex">
+            <h1 class="aboutHeadStyle">Resources</h1>
+          </div>
+        </div> -->
+      </div>
+      <article>
+        <div class="pageThirds centerText">
+          <h3 class="topSpace">HTML, CSS and JS Cheatsheets:</h3>
+          <div class="topSpace">
+            <a href="https://htmlcheatsheet.com/" target="_blank">htmlcheatsheet.com</a><br>
+          </div>
+          <h3 class="topSpace">Git Cheatsheet:</h3>
+          <div class="topSpace">
+            <a href="https://www.git-tower.com/blog/git-cheat-sheet" target="_blank">www.git-tower.com</a><br>
+          </div>
+          <h3 class="topSpace">Colors:</h3>
+          <div class="topSpace">
+            <a href="https://www.color-hex.com/" target="_blank">www.color-hex.com</a><br>
+            <a href="https://coolors.co/" target="_blank">coolors.co</a>
+          </div>
+        </div>
+        <div class="pageThirds centerText">
+          <h3 class="topSpace">Copywrite Free Images:</h3>
+          <div class="topSpace">
+            <a href="https://unsplash.com/" target="_blank">unsplash.com</a>
+          </div>
+          <h3 class="topSpace">Copywrite Free Fonts:</h3>
+          <div class="topSpace">
+            <a href="https://fonts.google.com/" target="_blank">fonts.google.com</a>
+          </div>
+          <h3 class="topSpace">Fun Icons:</h3>
+          <div class="topSpace">
+            <a href="https://fontawesome.com/" target="_blank">fontawesome.com</a>
+          </div>
+        </div>
+        <div class="pageThirds centerText">
+          <h3 class="topSpace">Trouble Shooting Bugs:</h3>
+          <div class="topSpace">
+            <a href="https://developer.mozilla.org/en-US/" target="_blank">MDN Webdocs</a>
+            <a href="https://stackoverflow.com/" target="_blank">stackoverflow.com</a>
+          </div>
+          <h3 class="topSpace">CSS Tricks:</h3>
+          <div class="topSpace">
+            <a href="https://css-tricks.com/" target="_blank">css-tricks.com</a><br>
+            <a href="https://codepen.io/" target="_blank">codepen.io</a>
+          </div>
+        </div>
+      </article>
     </section>
     <section id="notes" class="tab_content">
-      <h2>Notes</h2>
+      <div class="spacer"></div>
+      <h1 class="centerText">Notes</h1>
     </section>
+    <footer>
+      <div id="footerDiv">&copy; 2018 Jax Makerspace | All Rights Reserved</div>
+    </footer>
   </body>
 </html>

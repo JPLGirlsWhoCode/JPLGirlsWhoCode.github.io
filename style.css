@@ -1,3 +1,13 @@
+/* 
+#EFEFEF gray-white
+#F9DC5C golden-rod
+#E84855 raspberry
+#403F4C slate
+#02ADD9 cerulean
+ */
+ 
+/* --- Major Styles --- */
+
 * {
   margin: 0;
   padding: 0;
@@ -9,6 +19,15 @@
 
 body{
   font-family: 'Open Sans', sans-serif;
+  background-color: #403F4C;
+  color: #EFEFEF;
+  font-size: 16px;
+}
+
+/* --- Tag Styles --- */
+
+h1, h2, h3{
+  color: #F9DC5C;
 }
 
 h1, h2{
@@ -16,40 +35,225 @@ h1, h2{
   font-weight: bold;
 }
 
+h1{
+  font-size: 2em;
+}
+
+h2{
+  font-size: 1.5em;
+}
+
+h3{
+  font-size: 1.2em;
+}
+
+a, a:visited, a:hover, a:active {
+    text-decoration: none;
+}
+
+a{
+  color: #02ADD9;
+}
+
+a:hover, a:active{
+  color: #E84855;
+}
+
+nav{
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+}
+
+article{
+  padding: 20px;
+}
+
+/* --- Navigation Styles --- */
+
+#navInner{
+  display: flex;
+  justify-content: space-between;
+  background: rgba(249, 220, 92,.7);
+}
+
+#logosCont{
+  height: 38px;
+}
+
+.headerLogos{
+  height: 100%;
+  background-color: #EFEFEF;
+  border-radius: 5px;
+  padding: 5px;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.headerLogos:hover{
+  background-color: #E84855;
+}
+
 .tabs {
   margin: 0;
   padding: 0;
   list-style: none;
   overflow: hidden;
-  border-bottom: 1px solid #999;
 }
 
 .tabs li {
   float: left;
-  border: 1px solid #999;
   border-bottom: none;
-  background: #e0e0e0;
 }
 
 .tabs li a {
   display: block;
   padding: 10px 20px;
   font-size: 16px;
-  color: #000;
   text-decoration: none;
 }
 
 .tabs li a:hover {
-  background: #ccc;
+  background: #F9DC5C;
+}
+
+.tabs li.active a{
+  border-bottom: 3px solid #02ADD9;
+  transition: border-bottom .5s;
 }
 
 .tabs li.active,
 .tabs li.active a:hover {
   font-weight: bold;
-  background: #fff;
+  background: #EFEFEF;
 }
 
 .tab_content {
+  display: none;
+}
+
+.tab-article{
   padding: 20px;
-  font-size: 16px;
+}
+
+/* --- General Styles --- */
+
+.centerText{
+  text-align: center;
+}
+
+.fitWidth{
+  width: 100%;
+}
+
+.topSpace{
+  margin-top: 20px;
+}
+
+div.spacer{
+  height: 100px;
+}
+
+/* --- Article Header Styles --- */
+
+.headerContainer, .imageContainer{
+  height: 450px;
+}
+
+.imageContainer{
+  overflow: hidden;
+}
+
+.imageContainer img{
+  width: 100%;
+}
+
+.imageContainer, .blurbContainer{
+  position: absolute;
+}
+
+.imageContainer{
+  z-index: 1;
+}
+
+.blurbContainer{
+  z-index: 2;
+  width: 100%;
+}
+
+.blurbFlex{
+  margin-top: 11em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1.aboutHeadStyle{
+  font-size: 50px;
+  -webkit-text-stroke: 1px #F9DC5C;
+}
+
+div.aboutHeadStyle{
+  font-size: 33px;
+  -webkit-text-stroke: .5px #F9DC5C;
+}
+
+.aboutHeadStyle{
+  padding: 5px;
+  color: #02ADD9;
+  text-shadow:
+     2px  2px 0 #F9DC5C,
+    -1px -1px 0 #F9DC5C,  
+     1px -1px 0 #F9DC5C,
+    -1px  1px 0 #F9DC5C,
+     1px  1px 0 #F9DC5C;
+}
+
+/* --- Home Content Styles --- */
+
+/* --- Content Styles --- */
+
+#aboutArticle, #homeArticle{
+  display: flex;
+  justify-content: space-between;
+}
+
+div.pageContent{
+  width: 45%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+div.pageThirds{
+  width: 30%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+div.seventy{
+  width: 70%;
+  display: inline-block;
+}
+
+div.twentyFive{
+  width: 25%;
+  display: inline-block;
+}
+
+#homeRight{
+  text-align: center;
+}
+
+/* --- Footer Styles --- */
+
+footer{
+  display: block;
+  height: 100px;
+  width: 100%;
+}
+
+#footerDiv{
+  padding-top: 2em;
+  width: 100%;
+  text-align: center;
 }

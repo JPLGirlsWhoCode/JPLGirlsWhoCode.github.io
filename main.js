@@ -1,5 +1,6 @@
 $(function(){
-  $('.tab_content').hide();
+  //moved to css because it's faster
+  // $('.tab_content').hide();
   $('.tab_content:first').show();
   $('.tabs li:first').addClass('active');
   $('.tabs li').click(function(event) {
@@ -9,6 +10,6 @@ $(function(){
 
     var selectTab = $(this).find('a').attr("href");
 
-    $(selectTab).fadeIn();
+    $(selectTab).show();
   });
 });
