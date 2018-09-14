@@ -209,14 +209,7 @@ div.aboutHeadStyle{
      1px  1px 0 #F9DC5C;
 }
 
-/* --- Home Content Styles --- */
-
 /* --- Content Styles --- */
-
-#aboutArticle, #homeArticle{
-  display: flex;
-  justify-content: space-between;
-}
 
 div.pageContent{
   width: 45%;
@@ -240,8 +233,27 @@ div.twentyFive{
   display: inline-block;
 }
 
+#homeTopDiv{
+  display: flex;
+  justify-content: center;
+}
+
 #homeRight{
   text-align: center;
+}
+
+#videoDiv{
+  display: flex;
+  justify-content: center;
+}
+
+#aboutArticle{
+  display: flex;
+  justify-content: space-between;
+}
+
+#homeImgTop{
+  
 }
 
 /* --- Footer Styles --- */
