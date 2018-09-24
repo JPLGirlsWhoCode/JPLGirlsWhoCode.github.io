@@ -304,6 +304,7 @@ a.carousel-control{
 
 #homeImg1{
   overflow: hidden;
+  align-self: center;
 }
 
 #homeImg1 img{
@@ -335,17 +336,13 @@ a.carousel-control{
   font-size: .8em;
   justify-content: flex-end;
   margin-left: 100px;
+  color: #02ADD9;
 }
 
-.quote1st{
-  color: rgba(2, 173, 217, .5);
-}
 .quote2nd{
-  color: rgba(2, 173, 217, .7);
   margin-left: 20px;
 }
 .quote3rd{
-  color: rgba(2, 173, 217, 1);
   margin-left: 40px;
 }
 
