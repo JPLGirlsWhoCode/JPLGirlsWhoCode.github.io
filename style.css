@@ -304,6 +304,7 @@ a.carousel-control{
 
 #homeImg1{
   overflow: hidden;
+  align-self: center;
 }
 
 #homeImg1 img{
