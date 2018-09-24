@@ -6,8 +6,8 @@
 #02ADD9 cerulean
  */
  
-@media only screen and (min-width : 570px) and (max-width : 768px) {
- /* iPad Portrait */
+/* iPad Portrait */
+/* @media only screen and (min-width : 570px) and (max-width : 768px) {
   #homeSubheader{
    flex-direction: column;
    align-items: center;
@@ -20,14 +20,20 @@
   .card{
    font-size: .7em;
   }
-}
+} */
 
 @media only screen 
 and (min-width : 375px) 
 and (max-width : 667px) {/* iPhone 6,7,8 */}
 
-@media only screen and (max-width : 568px) {
-  /* iPhone 5,5s */
+@media only screen and (max-width : 815px) {
+  #carouselCont{
+    width: 397.5px !important;
+  }
+}
+
+@media only screen and (max-width : 945px) {
+  /* iPhone 5,5s max-width : 568px */
   #navTitle{
     display: none;
   }
@@ -38,7 +44,10 @@ and (max-width : 667px) {/* iPhone 6,7,8 */}
    flex-direction: column;
    align-items: center;
   }
-  #carouselCont, #clubBlurb{
+  #carouselCont{
+    width: 50% !important;
+  }
+  #clubBlurb{
    width: 95% !important;
   }
   #homeDetails{
@@ -46,6 +55,9 @@ and (max-width : 667px) {/* iPhone 6,7,8 */}
   }
   #mission, #homeImg1 {
     width: 95% !important;
+  }
+  #homeImg1, #reshmaCont{
+    text-align: center;
   }
   #videoDiv {
     flex-direction: column;
@@ -55,6 +67,9 @@ and (max-width : 667px) {/* iPhone 6,7,8 */}
   }
   #detailsHeader{
     flex-direction: column;
+  }
+  #detailsLeft{
+    display: none !important;
   }
   #detailsRight {
     width: 100% !important;
@@ -66,16 +81,24 @@ and (max-width : 667px) {/* iPhone 6,7,8 */}
     flex-direction: column;
     align-items: center;
   }
+  .pageContentPadding{
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
   .mostWidth, .lessWidth{
-    width: 90% !important;
+    width: 100% !important;
+  }
+  .mostWidth h2{
+    text-align: center;
   }
   #facilitators {
     flex-direction: column;
   }
   .card {
-    width: 90% !important;
-    margin-top: 10px;
-  margin-bottom: 10px;
+    width: 50% !important;
+    /* margin-top: 10px;
+    margin-bottom: 10px; */
+    margin: 10px auto !important;
   }
 }
  
@@ -94,7 +117,7 @@ body{
   font-family: 'Open Sans', sans-serif;
   background-color: #403F4C;
   color: #EFEFEF;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 /* --- Tag Styles --- */
@@ -153,7 +176,7 @@ section{
 }
 
 .mostWidth{
-  width: 65%;
+  width: 67%;
 }
 
 .lessWidth{
@@ -175,6 +198,11 @@ section{
 
 .pastDate{
   text-decoration: line-through;
+}
+
+.pageContentPadding{
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
 /* --- Navigation Styles --- */
@@ -365,6 +393,7 @@ a.carousel-control{
 
 #schedule{
   text-align: center;
+  margin-bottom: 20px;
 }
 
 #facilitators{
