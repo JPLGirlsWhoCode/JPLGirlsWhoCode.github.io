@@ -334,10 +334,11 @@ a.carousel-control{
   flex-direction: column;
   font-size: .8em;
   justify-content: flex-end;
+  margin-left: 100px;
 }
 
 .quote1st{
-  color: rgba(2, 173, 217, .4);
+  color: rgba(2, 173, 217, .5);
 }
 .quote2nd{
   color: rgba(2, 173, 217, .7);
@@ -351,10 +352,11 @@ a.carousel-control{
 #detailsRight{
   width: 40%;
   display: flex;
+  justify-content: flex-start;
 }
 
 .clubInfo{
-  min-width: 250px;
+  min-width: 190px;
   font-size: .8em;
 }
 
